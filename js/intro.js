@@ -110,8 +110,30 @@ field.addEventListener('keydown', (event) => {
   if (value && phase === 'question') ask(value);
 });
 
-// Tapping anywhere brings the keyboard back on phones.
-document.addEventListener('click', () => {
+const howToggle = document.querySelector('#how-toggle');
+const howPanel = document.querySelector('#how-panel');
+
+function setHowOpen(open) {
+  howPanel.hidden = !open;
+  howToggle.setAttribute('aria-expanded', String(open));
+}
+
+howToggle.addEventListener('click', (event) => {
+  event.stopPropagation(); // keep the document handler below from closing it again
+  setHowOpen(howPanel.hidden);
+});
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape' && !howPanel.hidden) {
+    setHowOpen(false);
+    if (!field.readOnly) field.focus();
+  }
+});
+
+// Clicking outside the explanation closes it, and tapping anywhere brings
+// the keyboard back on phones.
+document.addEventListener('click', (event) => {
+  if (!howPanel.contains(event.target)) setHowOpen(false);
   if (!field.readOnly) field.focus();
 });
 

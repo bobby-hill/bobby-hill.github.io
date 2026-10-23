@@ -43,6 +43,25 @@ export const chunks = [
     ],
   },
   {
+    source: 'Hobbies',
+    text: profile.hobbies,
+    asks: [
+      'What are your hobbies?',
+      'What do you do for fun?',
+      'What do you do in your free time?',
+      'What do you do outside of work?',
+      'Do you play any instruments?',
+      'Do you make music?',
+      'Are you in a band?',
+      'Do you like to travel?',
+      'Do you do photography?',
+      'Do you play sports?',
+      'How do you stay fit?',
+      'Do you go cycling?',
+      'Do you go to the gym?',
+    ],
+  },
+  {
     source: 'Contact',
     text: `You can reach ${profile.name} by email at ${profile.email}, or connect on GitHub and LinkedIn.`,
     links: [

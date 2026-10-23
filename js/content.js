@@ -4,7 +4,9 @@
 export const profile = {
   name: 'Nikolai Pokrishchenko',
   tagline: 'MSc Artificial Intelligence student at Vrije Universiteit Amsterdam, specialising in applied AI and robotics.',
-  bio: "I'm an MSc Artificial Intelligence student at Vrije Universiteit Amsterdam, specialising in applied AI, robotics and model efficiency. I'm passionate about bridging the gap between research and practical implementation, building helpful real-world systems with a visible impact. I'm based in the Netherlands.",
+  bio: "I'm a MSc Artificial Intelligence student at Vrije Universiteit Amsterdam, specialising in applied AI, robotics and model efficiency. I'm passionate about bridging the gap between research and practical implementation, building helpful real-world systems with a visible impact. I'm based in the Netherlands.",
+  hobbies:
+    "Outside of AI, I like to play instruments and record music. I also love travelling and taking photos of the places I see, and I keep fit with gym and cycling.",
   email: 'nipokri.work@gmail.com',
   links: {
     github: 'https://github.com/bobby-hill',

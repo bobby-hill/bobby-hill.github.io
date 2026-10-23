@@ -20,6 +20,23 @@
       <a id="link-linkedin" target="_blank" rel="noopener">LinkedIn</a>
       <a id="link-email">Email</a>
     </nav>
+
+    <button type="button" class="how-toggle" id="how-toggle" aria-expanded="false" aria-controls="how-panel">how does this work?</button>
+    <div class="how-panel" id="how-panel" hidden>
+      <p>
+        Your question is turned into a list of 384 numbers, called an embedding, by
+        all-MiniLM-L6-v2, a small sentence-embedding model. Each part of this portfolio,
+        along with a few example questions it answers, is embedded the same way.
+      </p>
+      <p>
+        The results are the parts whose embeddings point in the most similar direction
+        to your question's, measured by cosine similarity. So a question can match
+        without sharing any exact words.
+      </p>
+      <p>
+        The model runs entirely in your browser. Nothing you type is sent anywhere.
+      </p>
+    </div>
   </header>
 
   <main class="stage">
