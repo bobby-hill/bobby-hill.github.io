@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nikolai Pokrishchenko</title>
+  <meta name="description" content="Nikolai Pokrishchenko, MSc AI student at Vrije Universiteit Amsterdam. Ask my portfolio anything.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400&display=swap">
+  <link rel="stylesheet" href="css/minimal.css">
+</head>
+<body>
+  <canvas id="ripples" aria-hidden="true"></canvas>
+
+  <header class="masthead" id="masthead">
+    <p class="masthead-name" id="masthead-name"></p>
+    <nav class="masthead-links" aria-label="Contact">
+      <a id="link-github" target="_blank" rel="noopener">GitHub</a>
+      <a id="link-linkedin" target="_blank" rel="noopener">LinkedIn</a>
+      <a id="link-email">Email</a>
+    </nav>
+  </header>
+
+  <main class="stage">
+    <h1 class="line">
+      <span id="prompt"></span><span id="typed"></span><span class="caret" aria-hidden="true" hidden></span>
+    </h1>
+
+    <input id="field" class="field" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Type here" readonly>
+
+    <p id="status" class="status" role="status"></p>
+    <ol id="results" class="results"></ol>
+  </main>
+
+  <script type="module" src="js/intro.js"></script>
+</body>
+</html>
